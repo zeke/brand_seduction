@@ -1,0 +1,13 @@
+Suppose you have a Ruby on Rails application in /somewhere. Add a virtual host
+to your Apache configuration file, and set its DocumentRoot to
+/somewhere/public, like this:
+
+   <VirtualHost *:80>
+      ServerName www.yourhost.com
+      DocumentRoot /somewhere/public    # <-- be sure to point to 'public'!
+   </VirtualHost>
+
+And that's it! You may also want to check the Users Guide for security and
+optimization tips and other useful information:
+
+  /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.5/doc/Users guide Apache.html
